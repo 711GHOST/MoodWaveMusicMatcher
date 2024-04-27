@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.progress-bar-container > div:last-child {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  flex-shrink: 0;
+  right: 0;
+  text-align: right;
+}
+
+.progress-bar-container > div:last-child:hover {
+  /* Change background color on hover */
+  background-color: #18a854; /* Tailwind's blue-700 class */
+}
+
+.progress-bar-container > div:last-child::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; /* Position the dot at the bottom */
+  left: 50%; /* Center the dot horizontally */
+  transform: translateX(-50%); /* Offset for centering */
+  width: 4px;
+  height: 4px;
+  background-color: white; /* White dot */
+  border-radius: 50%; /* Make it a circle */
+}
+
+.progress-bar-container > div:last-child:hover::after {
+  /* Hide the dot on hover out */
+  opacity: 0;
+}

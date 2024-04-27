@@ -1,0 +1,24 @@
+{
+  "name": "spotify_backend",
+  "version": "1.0.0",
+  "description": "this will contain the backend code for the spotify clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shwetanshu Priyashi",
+  "license": "ISC",
+  "dependencies": {
+    "@u4/opencv4nodejs": "^6.5.3",
+    "bcrypt": "^5.1.1",
+    "cmake-js": "^7.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^6.10.0",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1"
+  }
+}
